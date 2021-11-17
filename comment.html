@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> comment </title>
+  </head>
+  <body>
+    <h1><a href="index.html" title="Home"> WEB </a></h1>
+    <ol>
+      <li><A href="1.html" title="HTML"> HTML</a></li>
+      <li><a href="2.html" title="CSS"> CSS</a></li>
+      <li><a href="3.html" title="Java"> JavaScript</a></li>
+    </ol>
+    <hr>
+    <p>
+     댓글 기능을 직접 구현하기 위해서는 백엔드 기술 공부(데이터베이스 활용) 필요 ex) php, jsp, 파이썬 <br>
+     Also, 스팸 필터링 기술 필요 + 이미지 업로드, Sns 연동 등 <br>
+     일단 남들이 만든 댓글 기능을 달아보자! using DISQUS or LiveRe <br>
+     💥 Q.Unable to load disqus? <br>
+         A. 당신이 지금 보고 있는 것은 파일입니다. 웹서버를 통하지 않아서 보안상의 이유로 disqus를 사용할 수 없습니다. 웹서버를 사용해서 이 페이지를 열어보세요! (GitHub or Apache)
+    </p>
+     <hr>
+     <h3> DISQUS vs LiveRe </h3>
+     <table>
+       <tr>
+         <td>  </td>
+         <td> <div style="text-align:center"> DISQUS </div> </td>
+         <td> <div style="text-align:center"> LiveRe </div></td>
+       </tr>
+       <tr>
+         <td> <div style="text-align:center"> 장점 </div></td>
+         <td> <ol> <li> 다양한 REST API</li>  </ol>  </td>
+         <td> <ol> <li> 국산 댓글 솔루션 </li> <li> 네이버/카카오톡 로그인O </li> </ol> </td>
+      </tr>
+      <tr>
+        <td> <div style="text-align:center"> 단점 </div></td>
+        <td> <ol>
+          <li>네이버/카카오톡 로그인X </li> <li> 댓글관리 시스템 다소 불편</li>
+        </ol></td>
+        <td> <ol>
+          <li>무료 플랜 사용시 광고 있음</li> <li>REST API 지원 부족</li>
+        </ol></td>
+      </tr>
+      </table>
+    <hr>
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web1-dcptvhxiyi.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </body>
+</html>
